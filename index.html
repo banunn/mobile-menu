@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mobile Select</title>
+  <meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="wrap" id="phone">
+	<div>
+			<button class="open" @click="open">Open</button>
+	</div>
+	<mobile-select
+			header-text="Select Quantity" 
+		  option-template="quantity-select-option" 
+			v-on:close="close" 
+		  :options="options" 
+			:open="optionState"
+			v-on:select="optionSelected"
+	>
+	</mobile-select>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.9/vue.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
